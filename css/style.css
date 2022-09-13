@@ -5,3 +5,16 @@
     --cor1: #FD3E3C;
     --cor2: #fff;
 }
+.nav-link {
+    font-size: 25px !important;
+    color: var(--cor1) !important;
+    border-radius: 7px !important;
+    font-weight: bold !important;
+    margin-right: 30px ;
+    letter-spacing: 4px;
+    padding: 13px !important;
+}
+.nav-link:hover {
+    background-color: rgba(223, 223, 223, 0.548);
+    transition: 0.8s;
+}
