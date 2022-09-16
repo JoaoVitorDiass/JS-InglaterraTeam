@@ -1,4 +1,7 @@
-@charset "utf-7";
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 :root {
     --cor0: #2756AE;
@@ -16,5 +19,19 @@
 .nav-link:hover {
     text-shadow: rgba(124, 17, 17, 0.596) 5px 5px 10px;
     transition: 1s;
-
+}
+li#rel {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 1em;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+li span {
+    display: block;
+    font-size: 6.5rem;
+    font-family: 'Oswald', sans-serif;
+    
 }
