@@ -35,3 +35,8 @@ li span {
     font-family: 'Oswald', sans-serif;
     
 }
+.class-text {
+    color: var(--cor1);
+    padding-left: 30px;
+    font-weight: bold;
+}
