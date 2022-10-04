@@ -35,6 +35,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    div{
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+    }
+  </style>
   <script>
     function allowDrop(ev) {
       ev.preventDefault();
@@ -44,18 +51,13 @@
       ev.dataTransfer.setData("text", ev.target.id);
     }
 
-    function drop(ev) {
+    function drop(ev, element) {
      
       ev.preventDefault();
       var data = ev.dataTransfer.getData("text");
-      var element;
-      var allelements = ev.path;
-      for(var i =0; i < allelements.length; i++)
-      {
-        if(allelements[i].className == "at1")
-          element = allelements[i].children;
-      }
-      if(element.length == 0)
+      //if (ev.target.childElementCount == 0)
+
+      if (element.childElementCount == 0)
         ev.target.appendChild(document.getElementById(data));
     }
   </script>
@@ -128,37 +130,37 @@
         <div class="row content">
           <div class="col-lg-12 order-1 order-lg-2 d-flex justify-content-center">
             <div class="jogadores">
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag15" src="assets/img/jogadores/BenChilwell.png" title="Ben Chilwell" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
             </div>
             <div class="jogadores">
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag8" src="assets/img/jogadores/jackgrealish.png" title="Jack Grealish" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag9" src="assets/img/jogadores/masonmount.png" title="Mason Mount" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag10" src="assets/img/jogadores/masongreenwood.png" title="Mason GreenWood" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag11" src="assets/img/jogadores/Trent-Alexander-Arnold.png" title="Trent Alexander Arnold" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag12" src="assets/img/jogadores/judebellingham.png" title="Jude Beellingham" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag13" src="assets/img/jogadores/PatrickBamford.png" title="Patrick Bamford" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag14" src="assets/img/jogadores/JarrodBowen.png" title="Jarrod Bowen" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
@@ -168,73 +170,73 @@
             <div class="escalacao">
               
               <div class="atacantes d-flex justify-content-around align-items-end">
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
               </div>
               <div class="meio-campo d-flex justify-content-around align-items-end">
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
               </div>
               <div class="zagueiros d-flex justify-content-center align-items-end">
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
               </div>
               <div class="goleiro d-flex justify-content-center align-items-end">
-                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
 
                 </div>
 
               </div>
             </div>
             <div class="jogadores">
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag1" src="assets/img/jogadores/harry.png" title="Harry Maguire" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag2" src="assets/img/jogadores/harrykane.png" title="Harry Kane" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag3" src="assets/img/jogadores/sterling.png" title="Raheem Sterling" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag4" src="assets/img/jogadores/phill.png" title="Phil Foden" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag5" src="assets/img/jogadores/Jordan-Pickford.png" title="Jordan Pickford" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag6" src="assets/img/jogadores/bukayo.png" title="Bukayo Saka" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
-              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="at1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                 <img id="drag7" src="assets/img/jogadores/marcguehi.png" title="Marc Guéhi" draggable="true"
                   ondragstart="drag(event)" width="336" height="69">
               </div>
