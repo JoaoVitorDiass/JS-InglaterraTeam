@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Our Story - MeFamily Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MeFamily - v4.9.0
+  * Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+     
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      var element;
+      var allelements = ev.path;
+      for(var i =0; i < allelements.length; i++)
+      {
+        if(allelements[i].className == "at1")
+          element = allelements[i].children;
+      }
+      if(element.length == 0)
+        ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <img src="assets/img/England_flag.png" alt="" style="width: 80px;">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="our-story.html">Our Story</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Our Story</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Our Story</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+
+
+    <!-- ======= Featured Members Section ======= -->
+    <section id="featured-members" class="featured-members">
+      <div class="container">
+        <div class="row content">
+          <div class="col-lg-12 order-2 order-lg-1 pt-3 pt-lg-0">
+            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-lg-12 order-1 order-lg-2 d-flex justify-content-center">
+            <div class="jogadores">
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag15" src="assets/img/jogadores/BenChilwell.png" title="Ben Chilwell" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+            </div>
+            <div class="jogadores">
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag8" src="assets/img/jogadores/jackgrealish.png" title="Jack Grealish" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag9" src="assets/img/jogadores/masonmount.png" title="Mason Mount" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag10" src="assets/img/jogadores/masongreenwood.png" title="Mason GreenWood" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag11" src="assets/img/jogadores/Trent-Alexander-Arnold.png" title="Trent Alexander Arnold" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag12" src="assets/img/jogadores/judebellingham.png" title="Jude Beellingham" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag13" src="assets/img/jogadores/PatrickBamford.png" title="Patrick Bamford" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag14" src="assets/img/jogadores/JarrodBowen.png" title="Jarrod Bowen" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+            </div>
+            
+           
+            <div class="escalacao">
+              
+              <div class="atacantes d-flex justify-content-around align-items-end">
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+              </div>
+              <div class="meio-campo d-flex justify-content-around align-items-end">
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+              </div>
+              <div class="zagueiros d-flex justify-content-center align-items-end">
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+              </div>
+              <div class="goleiro d-flex justify-content-center align-items-end">
+                <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+
+              </div>
+            </div>
+            <div class="jogadores">
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag1" src="assets/img/jogadores/harry.png" title="Harry Maguire" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag2" src="assets/img/jogadores/harrykane.png" title="Harry Kane" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag3" src="assets/img/jogadores/sterling.png" title="Raheem Sterling" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag4" src="assets/img/jogadores/phill.png" title="Phil Foden" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag5" src="assets/img/jogadores/Jordan-Pickford.png" title="Jordan Pickford" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag6" src="assets/img/jogadores/bukayo.png" title="Bukayo Saka" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+              <div class="at1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag7" src="assets/img/jogadores/marcguehi.png" title="Marc Guéhi" draggable="true"
+                  ondragstart="drag(event)" width="336" height="69">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Featured Members Section -->
+
+    <!-- ======= Members Section ======= -->
+    <section class="container">
+
+    </section><!-- End Members Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>MeFamily</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>MeFamily</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
