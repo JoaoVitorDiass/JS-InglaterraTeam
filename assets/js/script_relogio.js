@@ -61,7 +61,7 @@
                 "<div class='estreia-main p-5 text-center'>"+
                   "<div class='fundo-estreia' style='color: #fff;width: 80%;'>"+
                     "<h1>"+       
-                      "Dias para estreia:"+
+                      "Dias para estreia na Copa do Mundo:"+
                     "</h1>"+
                     "<div id='countdown'>"+
                       "<ul>"+
