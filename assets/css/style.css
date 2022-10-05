@@ -1175,13 +1175,15 @@ section {
 }
 
 .contact-us .info .email,
-.contact-us .info .phone {
+.contact-us .info .phone,
+.contact-us .info .site {
   margin-top: 40px;
 }
 
 .contact-us .info .email:hover i,
 .contact-us .info .address:hover i,
-.contact-us .info .phone:hover i {
+.contact-us .info .phone:hover i,
+.contact-us .info .site:hover i {
   background: #006fbe;
   color: #fff;
 }
@@ -1369,10 +1371,6 @@ section {
 }
 
 
-
-
-
-
 :root {
     --cor0: #2756AE;
     --cor1: #FD3E3C;
@@ -1399,91 +1397,7 @@ li#rel {
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
 }
-li span {
-    display: block;
-    font-size: 6.5rem;
-    font-family: 'Oswald', sans-serif;
-    
-}
 
-.escalacao{
-  background-image: url(../img/campo.jpg);
-  background-repeat:  no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 500px !important;
-  height: 700px !important;
-}
-
-.atacantes{      
-           
-  width: 500px;
-  height: 180px;
-}
-
-.meio-campo{      
-  
-  width: 500px;
-  height: 168px;
-}
-.zagueiros{      
-  
-  width: 500px;
-  height: 168px;
-}
-
-.goleiro{           
-  width: 500px;
-  height: 145px;
-}
-.at1{
-  background-color: #F3F9ED;    
-  width:  90px;
-  height: 90px;
-  text-align: center;
-  border-radius: 100%;
-  line-height: 75px;
-  font-size: 30px;
-  -webkit-box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%); 
-  box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%);
-}
-
-.zagueiros > div{
-  margin: 0px 12px 0px 12px;
-}
-
-.at1 > img{
-  width:  90px;
-  height: 90px;
-  text-align: center;
-  border-radius: 100%
-}
-
-.estreia{
-  width: auto;
-  height: auto;  
-}
-.estreia-main{
-  width: auto;
-  height: 700px;
-  display: flex;
-  align-items: center;
-}
-.fundo-estreia{
-  height: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.356);
-      
-}
-.fundo-estreia > h1{
-  font-family: "Oswald, sans-serif";
-  font-size: 3em;
-  font-weight: 400;  
-}
 
 /* Image Overlay */
 
@@ -1510,8 +1424,6 @@ li span {
   background-color: rgba(0, 0, 0, 0.448);
   
 }
-
-
 
 .image .overlay::before{   
   content: "";
@@ -1564,9 +1476,14 @@ li span {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  
+<<<<<<< HEAD
 }
-
-.at1{
-  margin: 10px;
+.event-list .card-img{
+  max-height: 300px;
+}
+video{
+  width: auto;
+  height: 280px;
+=======
+>>>>>>> 97e31adb472bab3c35c69f4a2db3f72e3191359f
 }
