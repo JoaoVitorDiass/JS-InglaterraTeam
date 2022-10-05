@@ -34,15 +34,53 @@
   * Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  ======================================================== -->  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   
+  <style>
+    .estreia{
+      width: auto;
+      height: auto;  
+    }
+
+    .estreia-main{
+      width: auto;
+      height: 700px;
+      display: flex;
+      align-items: center;
+    }
+
+    .fundo-estreia{
+      height: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.356);
+    }
+
+    .fundo-estreia > h1{
+      font-family: "Oswald, sans-serif";
+      font-size: 3em;
+      font-weight: 400;  
+    }
+    
+    .days, .hours, .minutes, .seconds {
+      display: block;
+      font-size: 6.5rem;
+      font-family: 'Oswald', sans-serif;
+    }
+    
+  </style>
+
   <!--Scripts-->
   <script src="assets/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/script_relogio.js"></script>
+
 </head>
 
 <body onload="geraHtml()">

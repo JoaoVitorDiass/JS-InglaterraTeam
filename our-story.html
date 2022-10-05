@@ -38,12 +38,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <style>
-    @media screen {
-      
-    }
 
+  <style>
 
     div{
       -webkit-user-select: none; /* Safari */
@@ -52,9 +48,142 @@
     }
 
     .imgDrag{
-      width: 336px;
-      height: 69px;
+      cursor: move; /* fallback: no `url()` support or images disabled */
+      cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+      cursor:    -moz-grab; /* Firefox 1.5-26 */
+      cursor:         grab; /* W3C standards syntax, should come least */
     }
+
+    .imgDrag:active {
+      cursor: -webkit-grabbing;
+      cursor:    -moz-grabbing;
+      cursor:         grabbing;
+    }
+
+    .escalacao{
+      background-image: url(assets/img/campo.jpg);
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 600px) {
+      .escalacao{
+        width: 600px !important;
+        height: 700px !important;
+      }
+
+      .atacantes{
+        width: 500px;
+        height: 180px;
+      }
+
+      .meio-campo{
+        width: 500px;
+        height: 168px;
+      }
+
+      .zagueiros{
+        width: 500px;
+        height: 168px;
+      }
+
+      .goleiro{
+        width: 500px;
+        height: 145px;
+      }
+
+      .at1{
+        background-color: #F3F9ED;    
+        width:  90px;
+        height: 90px;
+        text-align: center;
+        border-radius: 100%;
+        line-height: 75px;
+        font-size: 30px;
+        -webkit-box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%); 
+        box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%);
+      }
+      
+      .zagueiros > div{
+        margin: 0px 12px 0px 12px;
+      }
+      
+      .at1 > img{
+        width:  90px;
+        height: 90px;
+        text-align: center;
+        border-radius: 100%
+      }
+  
+      .at1{
+        margin: 10px;
+      }
+
+      .imgDrag{
+        max-width: 10px;
+        max-height: 89px;
+      }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 4096px){
+      .escalacao{
+        width: 500px !important;
+        height: 700px !important;
+      }
+      
+      .atacantes{
+        width: 500px;
+        height: 180px;
+      }
+      
+      .meio-campo{
+        width: 500px;
+        height: 168px;
+      }
+
+      .zagueiros{
+        width: 500px;
+        height: 168px;
+      }
+      
+      .goleiro{
+        width: 500px;
+        height: 145px;
+      }
+
+      .at1{
+        background-color: #F3F9ED;    
+        width:  90px;
+        height: 90px;
+        text-align: center;
+        border-radius: 100%;
+        line-height: 75px;
+        font-size: 30px;
+        -webkit-box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%); 
+        box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%);
+      }
+      
+      .zagueiros > div{
+        margin: 0px 12px 0px 12px;
+      }
+      
+      .at1 > img{
+        width:  90px;
+        height: 90px;
+        text-align: center;
+        border-radius: 100%
+      }
+  
+      .at1{
+        margin: 10px;
+      }
+
+      .imgDrag{
+        width: 336px;
+        height: 69px;
+      }
+    }
+    
   </style>
 
   <!--Scripts-->

@@ -58,25 +58,22 @@
       var element = document.getElementsByClassName("carousel-item");
 
       html =  "<section id='estreia' class='estreia'>" +
-      "<div class='estreia-main p-5 text-center '"+
-        
-
-      "'>"+
-        "<div class='fundo-estreia' style='color: #fff;width: 80%;'>"+
-          "<h1>"+       
-            "Dias para estreia:"+
-          "</h1>"+
-          "<div id='countdown'>"+
-            "<ul>"+
-              "<li id='rel'><span class='days'></span>Dias</li>"+
-              "<li id='rel'><span class='hours'></span>Horas</li>"+
-              "<li id='rel'><span class='minutes'></span>Minutos</li>"+
-              "<li id='rel'><span class='seconds'></span>Segundos</li>"+
-            "</ul>"+
-          "</div>"+
-        "</div>"+
-      "</div>"+
-    "</section>";
+                "<div class='estreia-main p-5 text-center'>"+
+                  "<div class='fundo-estreia' style='color: #fff;width: 80%;'>"+
+                    "<h1>"+       
+                      "Dias para estreia:"+
+                    "</h1>"+
+                    "<div id='countdown'>"+
+                      "<ul>"+
+                        "<li id='rel'><span class='days'></span>Dias</li>"+
+                        "<li id='rel'><span class='hours'></span>Horas</li>"+
+                        "<li id='rel'><span class='minutes'></span>Minutos</li>"+
+                        "<li id='rel'><span class='seconds'></span>Segundos</li>"+
+                      "</ul>"+
+                    "</div>"+
+                  "</div>"+
+                "</div>"+
+              "</section>";
       
       for(var i =0; i < element.length; i++)
       {
