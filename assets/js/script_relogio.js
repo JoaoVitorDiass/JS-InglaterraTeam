@@ -60,7 +60,7 @@
       html =  "<section id='estreia' class='estreia'>" +
                 "<div class='estreia-main p-5 text-center'>"+
                   "<div class='fundo-estreia' style='color: #fff;width: 80%;'>"+
-                    "<h1>"+       
+                    "<h1 class='titulo-relogio'>"+
                       "Dias para estreia na Copa do Mundo:"+
                     "</h1>"+
                     "<div id='countdown'>"+

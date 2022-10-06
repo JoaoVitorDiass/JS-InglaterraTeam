@@ -43,7 +43,7 @@
   <style>
     .estreia{
       width: auto;
-      height: auto;  
+      height: 100%;  
     }
 
     .estreia-main{
@@ -73,6 +73,28 @@
       display: block;
       font-size: 6.5rem;
       font-family: 'Oswald', sans-serif;
+    }
+    
+    @media (max-width: 920px) {
+      .days, .hours, .minutes, .seconds {
+        font-size: 4rem
+      }
+    }
+    @media (max-width: 780px) {
+      .fundo-estreia {
+        height: 550px;
+      }
+    }
+    @media (max-width: 490px) {
+      .fundo-estreia {
+        height: 800px;
+      }
+      .days, .hours, .minutes, .seconds {
+        font-size: 2rem;
+      }
+      .fundo-estreia > h1{
+      font-size: 2em;
+    }
     }
     
   </style>
