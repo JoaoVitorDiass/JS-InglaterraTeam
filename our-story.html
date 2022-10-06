@@ -76,7 +76,69 @@
 
     @media screen and (max-width: 600px) {
       .escalacao{
-        width: 600px !important;
+        width: 320px;
+        height: 448px;
+      }
+
+      .atacantes{
+        width: 320px;
+        height: 119px;
+      }
+
+      .meio-campo{
+        width: 320px;
+        height: 119px;
+      }
+
+      .zagueiros{
+        width: 320px;
+        height: 119px;
+      }
+
+      .goleiro{
+        width: 320px;
+        height: 90px;
+      }
+
+      .at1{
+        background-color: #F3F9ED;    
+        width:  55px;
+        height: 55px;
+        text-align: center;
+        border-radius: 100%;
+        line-height: 60px;
+        font-size: 30px;
+        -webkit-box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%); 
+        box-shadow: 4px 6px 6px -5px rgb(0 0 0 / 82%);
+      }
+      
+      .zagueiros > div{
+        margin: 0px 12px 0px 12px;
+      }
+      
+      .at1 > img{
+        width:  55px;
+        height: 55px;
+        text-align: center;
+        border-radius: 100%
+      }
+      .at1{
+        margin: 10px;
+      }
+      .d-flex {
+        flex-wrap: wrap;
+      }
+      .jogadores {
+        display: flex;
+        height: auto ;
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+    
+    @media screen and (min-width: 600px) and (max-width: 1030px) {
+      .escalacao{
+        width: 500px !important;
         height: 700px !important;
       }
 
@@ -122,17 +184,17 @@
         text-align: center;
         border-radius: 100%
       }
-  
-      .at1{
-        margin: 10px;
+      .d-flex {
+        flex-wrap: wrap;
       }
-
-      .imgDrag{
-        max-width: 10px;
-        max-height: 89px;
+      .jogadores {
+        display: flex;
+        height: auto ;
+        justify-content: center;
+        flex-direction: row;
       }
     }
-    @media screen and (min-width: 1024px) and (max-width: 4096px){
+    @media screen and (min-width: 1030px) and (max-width: 4096px){
       .escalacao{
         width: 500px !important;
         height: 700px !important;
@@ -188,6 +250,13 @@
       .imgDrag{
         width: 336px;
         height: 69px;
+      }
+      
+      .jogadores {
+        display: flex;
+        height: 750px;
+        flex-direction: column;
+        flex-wrap: wrap;
       }
     }
     
