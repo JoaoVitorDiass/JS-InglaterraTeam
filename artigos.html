@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - MeFamily Bootstrap Template</title>
+  <title>Events - MeFamily Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,20 +26,62 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
   <!-- =======================================================
   * Template Name: MeFamily - v4.9.0
   * Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <style>
+    .ArtigoRow{
+      background-color: #0000000a;
+      border-radius: 15px;
+      padding: 2ch 2ch 2ch 2ch;
+      margin-bottom: 3ch;
+    }
+
+    .imgArtigo{
+      border-radius: 15px;
+    }
+
+    .btnArtigo{
+      background-color: #1d284b !important; 
+      color: white !important;
+    }
+
+    .btnArtigo:hover{
+      background-color: #425796 !important;
+      color: white !important;
+    }
+  </style>
+
   <!--Scripts-->
   <script src="assets/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    function AbreLink(Op){
+      let link = "";
+      switch(Op.replace("btn", "")){
+        case "1":
+          link = "https://ge.globo.com/futebol/copa-do-mundo/eliminatorias-europa/jogo/15-11-2021/sanmarino-inglaterra.ghtml";
+        break;
+
+        case "2": 
+          link = "https://www.espn.com.br/futebol/copa-do-mundo/artigo/_/id/10992635/neymar-no-bolso-a-certeza-de-entrega-na-copa-como-maguire-virou-simbolo-de-desilusao-da-inglaterra";
+        break;
+      }
+
+      if (link.length > 0){
+        window.open(link, "_blank");
+      }
+    }
+  </script>
+  
 </head>
 
 <body>
@@ -47,7 +89,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-     
+
       <img src="assets/img/England_flag.png" alt="" style="width: 80px;">
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -57,9 +99,9 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="our-story.html">Escalação</a></li>
           <li><a href="events.html">Sobre</a></li>
-          <li><a href="gallery.html">Galeria</a></li>
-          <li><a class="active" href="contact.html">Contato</a></li>
-          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="gallery.html">Galeria</a></li>          
+          <li><a href="contact.html">Contato</a></li>
+          <li><a class="active" href="artigos.html">Artigos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -74,87 +116,56 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contato</h2>
+          <h2>Artigos</h2>
           <ol>
             <li><a href="index.html">Início</a></li>
-            <li>Contato</li>
+            <li>Artigos</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact-us" class="contact-us">
+        
+    <section id="event-list" class="event-list">
       <div class="container">
-
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9922.663684292764!2d-0.2796177!3d51.5560247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa64f9f185de8e097!2sEst%C3%A1dio%20de%20Wembley!5e0!3m2!1spt-BR!2sbr!4v1664939856384!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Localização:</h4>
-                <p>London HA9 0WS, Reino Unido</p>
-              </div>
-
-              <div class="site">
-                <i class="bi bi-link" style="cursor: pointer;"
-                                      onclick="window.open('https://www.wembleystadium.com', '_blank')"></i>
-                <h4>WebSite:</h4>
-                <p style="cursor: pointer;"
-                onclick="window.open('https://www.wembleystadium.com', '_blank')">wembleystadium.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Telefone:</h4>
-                <p>+44 800 169 9933</p>
-              </div>
-
+        <div class="ArtigoRow row">
+          <div class="col-md-4">
+            <img class="img-fluid imgArtigo" src="assets/img/EliminatoriasCopaArtigo.jpeg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <h5>Inglaterra atropela San Marino e é mais uma classificada para a Copa do Mundo</h5>
+            <p>Inglaterra não tomou conhecimento de San Marino, venceu com facilidade por 10 a 0, e é mais uma equipe a garantir vaga na Copa do Mundo de 2022. Destaque para Harry Kane, que marcou quatro vezes e se tornou o terceiro maior artilheiro da seleção inglesa junto com Gary Lineker, ambos com 48 gols, atrás apenas de Bobby Charlton (49) e Wayne Rooney (53).</p>
+            <p>Com a vitória, a Inglaterra garante seu lugar na Copa do Mundo de 2022 junto com Catar, Brasil, Alemanha, Dinamarca, França, Bélgica, 
+              Croácia, Espanha, Suíça e Sérvia. Na chave europeia, resta agora apenas uma vaga, que será disputada nesta terça-feira por Holanda, 
+              Turquia e Noruega.</p>
+            <div class="col-md-12" style="text-align: end;">
+              <button id="btn1" class="btn btnArtigo" onclick="AbreLink(this.id);">
+                Saiba mais
+              </button>
             </div>
-
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" required>
-                <div class="validate"></div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="my-3">
-                <div class="loading">Carregando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Us Section -->
+
+      <div class="container">
+        <div class="ArtigoRow row">
+          <div class="col-md-4">
+            <img class="img-fluid imgArtigo" src="assets/img/MaguireSimbolo.jpg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <h5>De 'botar Neymar no bolso' à certeza de 'entrega' na Copa: como Maguire virou símbolo de desilusão da Inglaterra</h5>
+            <p>No futebol, muita coisa pode mudar depois de 90 minutos. E parece que foi exatamente isso que aconteceu com o zagueiro Maguire, da Inglaterra.</p>
+            <p>Antes do empate em 3 a 3 com a Alemanha na última segunda-feira, pela Uefa Nations League, o clima entre os torcedores ingleses era de otimismo - talvez até demais. Nos arredores do Wembley, os locais mostravam bastante confiança em sua equipe para a Copa do Mundo, com alguns garantindo que o "futebol voltará para casa"</p>
+            <div class="col-md-12" style="text-align: end;">
+              <button id="btn2" class="btn btnArtigo" onclick="AbreLink(this.id);">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main><!-- End #main -->
 
